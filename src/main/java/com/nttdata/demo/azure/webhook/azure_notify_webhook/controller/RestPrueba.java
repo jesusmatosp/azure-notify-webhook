@@ -20,4 +20,10 @@ public class RestPrueba {
         logger.info("SE EJECUTO LA INVOCACIÓN DESDE EL WEBHOOK");
         return "OK";
     }
+
+    @PostMapping("/notify")
+    public String postTestWebhookNotify() {
+        logger.info("POST SE EJECUTO LA INVOCACIÓN DESDE EL WEBHOOK");
+        return "OK 2";
+    }
 }
